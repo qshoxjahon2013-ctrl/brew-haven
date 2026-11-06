@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Brew Haven is your neighborhood coffee house for carefully sourced coffee, thoughtful food, and slower mornings."
+    />
+    <meta name="theme-color" content="#f6f1e8" />
+    <title>Brew Haven — Good coffee, good company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Brew Haven home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M9 17h20v7a10 10 0 0 1-20 0v-7Z" stroke="currentColor" stroke-width="1.8" />
+            <path d="M29 19h2.5a4 4 0 0 1 0 8H28M14 12c-1.6-2 1.6-2.8 0-5m7 5c-1.6-2 1.6-2.8 0-5m7 5c-1.6-2 1.6-2.8 0-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="brand-name">brew <span>haven</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">Our story</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#menu">Find your favorite <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="A warm, sunlit coffee shop with a cup of freshly brewed coffee"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span></span> Your neighborhood, a little slower</p>
+          <h1 id="hero-title">A good day<br />starts <em>here.</em></h1>
+          <p class="hero-copy">Thoughtfully sourced coffee, made with care.<br class="desktop-break" /> Come on in and stay a while.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#menu">Explore the menu <span aria-hidden="true">↗</span></a>
+            <a class="text-link light-link" href="#about">Get to know us <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>GOOD COFFEE. GOOD COMPANY.</span></div>
+        <a class="scroll-cue" href="#menu" aria-label="Scroll to the menu"><span></span></a>
+      </section>
+
+      <section class="menu-section section-pad" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> Made for your moment</p>
+            <h2 id="menu-title">A little something<br /><em>to look forward to.</em></h2>
+          </div>
+          <p class="section-intro">The classics you love, made a little more special. Every cup begins with excellent beans and a whole lot of heart.</p>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <div class="menu-photo photo-latte" role="img" aria-label="Latte with delicate leaf latte art"></div>
+            <div class="menu-card-body"><div class="menu-title-row"><h3>Honey Oat Latte</h3><span>$5.50</span></div><p>Double espresso, steamed oat milk &amp; a touch of wildflower honey.</p><span class="menu-tag">A HOUSE FAVORITE</span></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-photo photo-coldbrew" role="img" aria-label="Iced cold brew in a glass"></div>
+            <div class="menu-card-body"><div class="menu-title-row"><h3>Slow Day Cold Brew</h3><span>$5.00</span></div><p>Steeped for 18 hours. Smooth, chocolatey, and served over ice.</p><span class="menu-tag">SLOW STEEPED</span></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-photo photo-cappuccino" role="img" aria-label="Cappuccino with a dusting of cocoa"></div>
+            <div class="menu-card-body"><div class="menu-title-row"><h3>Classic Cappuccino</h3><span>$4.75</span></div><p>Rich espresso meets silky foam. The little black dress of coffee.</p><span class="menu-tag">THE CLASSIC</span></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-photo photo-matcha" role="img" aria-label="Iced matcha latte with creamy milk"></div>
+            <div class="menu-card-body"><div class="menu-title-row"><h3>Garden Matcha</h3><span>$5.75</span></div><p>Bright, ceremonial-grade matcha whisked smooth with your choice of milk.</p><span class="menu-tag">A LITTLE GREEN</span></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-photo photo-mocha" role="img" aria-label="Rich mocha coffee with chocolate"></div>
+            <div class="menu-card-body"><div class="menu-title-row"><h3>Dark Chocolate Mocha</h3><span>$5.75</span></div><p>Our espresso with melted dark chocolate and a cloud of milk.</p><span class="menu-tag">A LITTLE INDULGENCE</span></div>
+          </article>
+          <article class="menu-card reveal">
+            <div class="menu-photo photo-pourover" role="img" aria-label="Freshly brewed pour-over coffee"></div>
+            <div class="menu-card-body"><div class="menu-title-row"><h3>Today's Pour Over</h3><span>$5.25</span></div><p>Single-origin, brewed by hand. Ask us what’s tasting lovely today.</p><span class="menu-tag">BREWED TO ORDER</span></div>
+          </article>
+        </div>
+        <p class="menu-footnote reveal">Plant-based milk available · Prices may vary by location</p>
+      </section>
+
+      <section class="story-section" id="about" aria-labelledby="story-title">
+        <div class="story-photo" role="img" aria-label="Barista preparing coffee in a welcoming neighborhood café"></div>
+        <div class="story-content reveal">
+          <p class="eyebrow"><span></span> A place to call yours</p>
+          <h2 id="story-title">More than a cup.<br /><em>A feeling.</em></h2>
+          <p>We opened Brew Haven with a simple thought: the best part of the day might be the pause in the middle of it.</p>
+          <p>So we find beans from people who care as much as we do, make every drink like it matters (because it does), and save you the sunny seat by the window.</p>
+          <a class="text-link dark-link" href="#contact">Come say hello <span aria-hidden="true">↗</span></a>
+          <div class="story-signoff"><span class="signoff-rule"></span><span>Made with love, every single day.</span></div>
+        </div>
+      </section>
+
+      <section class="visit-section section-pad" id="contact" aria-labelledby="visit-title">
+        <div class="visit-details reveal">
+          <p class="eyebrow"><span></span> We saved you a seat</p>
+          <h2 id="visit-title">Come on <em>in.</em></h2>
+          <p class="visit-copy">Your usual, something new, or just a quiet corner. We’ll have it ready.</p>
+          <div class="visit-info">
+            <div><span class="info-label">FIND US</span><p>214 Willow Street<br />Portland, OR 97205</p></div>
+            <div><span class="info-label">COME BY</span><p>Mon – Fri, 7am – 5pm<br />Sat – Sun, 8am – 4pm</p></div>
+          </div>
+          <a class="text-link dark-link directions-link" href="https://maps.google.com/?q=214+Willow+Street+Portland+OR+97205" target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contact-card reveal">
+          <p class="eyebrow"><span></span> Drop us a note</p>
+          <h3>Let’s keep<br />in <em>touch.</em></h3>
+          <form id="contact-form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="How should we call you?" required />
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            <label for="message">What's on your mind?</label>
+            <textarea id="message" name="message" rows="3" placeholder="A question, a kind word, a coffee order..." required></textarea>
+            <button class="button button-dark" type="submit">Send your note <span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M9 17h20v7a10 10 0 0 1-20 0v-7Z" stroke="currentColor" stroke-width="1.8" /><path d="M29 19h2.5a4 4 0 0 1 0 8H28M14 12c-1.6-2 1.6-2.8 0-5m7 5c-1.6-2 1.6-2.8 0-5m7 5c-1.6-2 1.6-2.8 0-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
+        </span>
+        <span class="brand-name">brew <span>haven</span></span>
+      </a>
+      <p>Made for the little moments.</p>
+      <span class="footer-copyright">© <span id="current-year"></span> Brew Haven Coffee Co.</span>
+    </footer>
+  </body>
+</html>
